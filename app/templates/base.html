@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}dazy{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <header class="hero ">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">WELCOME TO DAZY LAND</h1>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar is-light">
+        <div class="container">
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="{{ url_for('home') }}">Home</a>
+                    <a class="navbar-item" href="{{ url_for('about') }}">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="section">
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2024 My Flask App</p>
+        </div>
+    </footer>
+</body>
+
+</html>
