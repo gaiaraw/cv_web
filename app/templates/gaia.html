@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Curriculum Vitae{% endblock %}
+
+{% block content %}
+    <div id="app">
+        <div id="gaia" @click="addDivs">
+            {{ name }}
+        </div>
+        <div class="surrounding-text" v-if="divsVisible">
+            <a v-for="(div, index) in newDivs" :key="index" class="name-div" :href="getLink(div)">
+                [[ div ]]
+            </a>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            delimiters: ['[[', ']]'], // Changer les délimiteurs de vue.js car conflit avec jinja2
+            data: {
+                divsVisible: false,
+                newDivs: ['FORMATIONS', 'COMPÉTENCES', 'EXPÉRIENCES', 'JOB ÉTUDIANTS']
+            },
+            methods: {
+                addDivs() {
+                    this.divsVisible = true;
+                    console.log(this.newDivs)
+                },
+                getLink(div) {
+                    switch (div) {
+                        case 'FORMATIONS':
+                            return '/formations';
+                        case 'COMPÉTENCES':
+                            return '/competences';
+                        case 'EXPÉRIENCES':
+                            return '/experiences';
+                        case 'JOB ÉTUDIANTS':
+                            return '/job-etudiants';
+                        default:
+                            return '#';
+                    }
+                }
+            }
+        });
+    </script>
+{% endblock %}

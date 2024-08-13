@@ -4,39 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}dazy{% endblock %}</title>
+    <title>{% block title %}Mon CV{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lumen/bootstrap.min.css" integrity="sha384-GzaBcW6yPIfhF+6VpKMjxbTx6tvR/yRd/yJub90CqoIn2Tz4rRXlSpTFYMKHCifX" crossorigin="anonymous">
+   
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@3.5.3/dist/vue-router.js"></script>
 </head>
 
 <body>
-    <header class="hero ">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">WELCOME TO DAZY LAND</h1>
-            </div>
-        </div>
-    </header>
-    <nav class="navbar is-light">
-        <div class="container">
-            <div class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="{{ url_for('home') }}">Home</a>
-                    <a class="navbar-item" href="{{ url_for('about') }}">About</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <main class="section">
-        <div class="container">
-            {% block content %}{% endblock %}
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>&copy; 2024 My Flask App</p>
-        </div>
-    </footer>
+    {% block content %}{% endblock %}
 </body>
 
 </html>

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Expériences{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4 display-4">EXPÉRIENCES</h1>
+
+    <div class="mb-5">
+        <h2 class="text-primary display-5">PROJET DE RECHERCHE ET DE DÉVELOPPEMENT - MASTER 1</h2>
+        <p class="lead">
+            Au cours de l’année de Master 1, avec mes collègues étudiants, j'ai participé à un projet de recherche et de
+            développement portant sur l’analyse des données Oxford Nanopore provenant des cellules humaines infectées
+            par le VIH. Ce projet, qui a duré trois mois, a principalement été axé sur l'utilisation de Python. Notre
+            objectif était de mettre en place un pipeline pour traiter et analyser les données de nos clients, qui
+            étaient des biologistes. Il était donc crucial que l'outil soit clair et simple d'utilisation pour des
+            non-informaticiens.
+        </p>
+        <p class="lead"><strong>Outils informatiques :</strong> Python, Nextflow (Groovy), IGV</p>
+        <p class="lead">
+            Collaboration avec le <a href="https://www.mfp.cnrs.fr/wp/"
+                class="text-decoration-none"><strong>MFP</strong></a> et le <a href="https://www.labri.fr"
+                class="text-decoration-none"><strong>LaBRI</strong></a>.
+        </p>
+    </div>
+
+    <div class="mb-5">
+        <h2 class="text-primary display-5">DÉVELOPPEMENT WEB FULLSTACKS - MASTER 2</h2>
+        <p class="lead">
+            Pour mon stage de fin d'études, j'ai développé une application web destinée à des utilisateurs non experts
+            de l’EEG et de l’informatique pour un usage clinique. L'application a été réalisée avec le framework Python
+            Flask pour le backend et le système d'authentification. La communication avec la base de données
+            s'effectuait via l'ORM SQLAlchemy. Le frontend a été élaboré avec Javascript, HTML5/CSS3 et Bootstrap.
+            Pour l'analyse des signaux EEG, j'ai adapté du code Python écrit par mon co-encadrant et j'ai également
+            rédigé sa documentation à l'aide de la bibliothèque Python Sphinx. La partie visualisation a été réalisée
+            avec la bibliothèque de visualisation interactive Python Bokeh.
+        </p>
+        <p class="lead"><strong>Outils informatiques :</strong> Python (Flask, SQLAlchemy, SQLite, Bokeh, Sphinx), HTML5/CSS3 (Bootstrap),
+            Javascript</p>
+        <p class="lead">
+            Projet réalisé au sein de l’équipe <a
+                href="https://www.lib.upmc.fr/team-4-%C2%93anatomo-functional-dynamical-systems-in-human-alteration-and-functional-recovery-adsh%C2%94/"
+                class="text-decoration-none"><strong>NCP</strong></a> du <a href="https://www.lib.upmc.fr"
+                class="text-decoration-none"><strong>LIB</strong></a> de Sorbonne Université.
+        </p>
+    </div>
+
+    <div class="text-center">
+        <a href="{{ url_for('home') }}" class="btn btn-secondary btn-lg">Retour à la page d'accueil</a>
+    </div>
+</div>
+{% endblock %}

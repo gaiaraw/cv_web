@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Formations{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4 display-4">FORMATIONS</h1>
+
+    <div class="mb-5">
+        <h2 class="text-primary display-5">MASTER BIO-INFORMATIQUE</h2>
+        <p class="lead">Ma première année de master m'a plongé dans un univers vaste et passionnant : l'informatique.
+            J'ai découvert les principaux langages de programmation, ainsi que leurs applications en bio-informatique et
+            dans des projets de programmation sans lien direct avec la bio-informatique. J'ai beaucoup programmé en
+            <strong>Python</strong> et en <strong>Java</strong>, ce qui m'a permis d'intégrer la philosophie de chacun
+            de ces langages. J'ai également été
+            initié au <strong>développement web front-end</strong> lors d'une unité d'ensiegnement dediée, une expérience qui m'a
+            rapidement séduit.
+        </p>
+        <p class="lead">La deuxième année est composée d'un semestre, au cours duquel nous avons été introduits au
+            machine learning. Lors de ce semestre, j'ai également pris part à une unité d'ensiegnement de
+            <strong>programmation orientée objet</strong> en Java, destinée aux étudiants du master d'informatique.
+            Cette année se termine
+            par un stage
+            de fin d'études qui, pour ma part, m'a conforté dans l'idée de poursuivre ma carrière dans le développement
+            web, puisque j'ai eu l'opportunité de développer une application web en <strong>full stack</strong>.
+        </p>
+    </div>
+
+
+    <div class="mb-5">
+        <h2 class="text-primary display-5">LICENCE BIOLOGIE SANTÉ</h2>
+        <p class="lead">
+            Je suis diplômé d’une licence de sciences de la vie et de la terre parcours biologie santé.<br>
+            J’y ai acquis les bases d’un spectre immense de connaissances en biologie et en chimie. <br>
+        </p>
+    </div>
+
+    <div class="mb-5">
+        <h2 class="text-primary display-5">SEMESTRE ERASMUS ZAGREB</h2>
+        <p class="lead">Ce semestre, effectué lors de ma dernière année de licence, a été avant tout une expérience
+            humaine profondément enrichissante. J'ai eu l'opportunité inestimable de découvrir une nouvelle culture tout
+            en poursuivant mes études. Ce programme offre une immersion totale dans un environnement académique
+            différent, permettant non seulement d'élargir mes horizons, mais aussi de renforcer mes compétences
+            linguistiques. Je considère cette expérience comme un atout majeur dans mon parcours académique et
+            professionnel.</p>
+    </div>
+
+    <div class="text-center">
+        <a href="{{ url_for('home') }}" class="btn btn-secondary btn-lg">Retour à la page d'accueil</a>
+    </div>
+</div>
+{% endblock %}

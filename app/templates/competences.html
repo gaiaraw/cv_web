@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Compétences{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4 display-4">COMPÉTENCES</h1>
+
+    <div class="mb-5">
+        <h2 class="text-primary display-5">INFORMATIQUES</h2>
+        <ul class="list-unstyled h5">
+            <li><strong>Langages :</strong> Python, Java, Javascript</li>
+            <li><strong>Développement Web :</strong> Flask, RESTful API, Vue.js</li>
+            <li><strong>Manipulation de bases de données :</strong> SQL, ORM</li>
+        </ul>
+    </div>
+
+    <div class="mb-5">
+        <h2 class="text-primary display-5">BIO-INFORMATIQUES</h2>
+        <ul class="list-unstyled h5">
+            <li><strong>Analyse de données NGS :</strong> Galaxy, IGV, Nextflow</li>
+            <li><strong>Analyse d'images :</strong> ImageJ</li>
+            <li><strong>Machine learning :</strong> scikit-learn, PyTorch </li>
+        </ul>
+    </div>
+
+    <div class="mb-5">
+        <h2 class="text-primary display-5">HUMAINES</h2>
+        <ul class="list-unstyled h5">
+            <li>Autonomie et curiosité</li>
+            <li>Capacité à mener mes propres recherches</li>
+            <li>Fiabilité et adaptabilité</li>
+        </ul>
+    </div>
+
+    <div class="text-center">
+        <a href="{{ url_for('home') }}" class="btn btn-secondary btn-lg">Retour à la page d'accueil</a>
+    </div>
+</div>
+{% endblock %}

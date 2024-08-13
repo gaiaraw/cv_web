@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Job Étudiants{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4 display-4">JOB ÉTUDIANTS</h1>
+
+    <div class="mb-5">
+        <h2 class="text-primary display-5">CONSEILLER DE VENTE - OKAIDI (MONTREUIL, 2022)</h2>
+        <p class="lead">
+            En tant que conseiller de vente chez Okaidi, j'étais responsable de l'accueil et de l'orientation des clients dans le magasin. J'ai également participé aux opérations d'ouverture et de fermeture, assurant ainsi une présentation optimale des produits.
+        </p>
+    </div>
+
+    <div class="mb-5">
+        <h2 class="text-primary display-5">EMPLOYÉ POLYVALENT - KFC (VAL-DE-MARNE, 2019-2022)</h2>
+        <p class="lead">
+            Mon expérience en tant qu'employé polyvalent chez KFC m'a permis d'acquérir des compétences variées. J'étais chargé de la préparation des commandes et des produits, ainsi que de l'encaissement. Ce poste m'a aidé à développer ma capacité à travailler sous pression tout en maintenant un excellent service client.
+        </p>
+    </div>
+
+    <div class="mb-5">
+        <h2 class="text-primary display-5">CONSEILLER DE VENTE - BRICO DÉPÔT (MELUN, 2019)</h2>
+        <p class="lead">
+            En tant que conseiller de vente chez Brico Dépôt, j'ai pris en charge la relation client ainsi que le facing des produits. J'ai également participé à la gestion des stocks, garantissant une disponibilité optimale des articles pour nos clients.
+        </p>
+    </div>
+
+    <div class="text-center">
+        <a href="{{ url_for('home') }}" class="btn btn-secondary btn-lg">Retour à la page d'accueil</a>
+    </div>
+</div>
+{% endblock %}
